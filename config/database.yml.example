@@ -6,16 +6,16 @@ default: &default
 development:
   <<: *default
   username: root
-  password: Gallo.23gallogol
+  password: password
   host: localhost
-  database: RoBorregos_development2
+  database: RoBorregos_development
 
 test:
   <<: *default
   username: root
-  password: Gallo.23gallogol
+  password: password
   host: localhost
-  database: RoBorregos_test2
+  database: RoBorregos_test
 
 production:
   <<: *default

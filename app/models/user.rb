@@ -29,4 +29,8 @@ class User < ApplicationRecord
             presence: true
 
   enum status: [:active, :inactive]
+
+  def assign_default_role
+    self.add_role(:member) if self.roles.blank?
+  end
 end

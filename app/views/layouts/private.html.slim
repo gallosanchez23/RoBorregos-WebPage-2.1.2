@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title RoBorregos
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'private'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tags
+
+  body
+    /.private-section
+      = render partial: 'layouts/private/sidebar'
+      .page-content
+        = yield
+    /#sidebar
+      = render partial: 'layouts/private/sidebar'
+      = yield
+
+    .private-section
+      = render partial: 'layouts/private/sidebar'
+      .page-content
+        = yield
+
+    = javascript_include_tag 'private/sidebar'

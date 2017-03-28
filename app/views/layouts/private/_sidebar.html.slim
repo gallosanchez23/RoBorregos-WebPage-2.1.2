@@ -1,0 +1,156 @@
+/.sidebar-section
+  ul.sidebar
+    li.sidebar-brand
+      = image_tag 'header_2.png', { width: 160 }
+    li.sidebar-image
+      = image_tag 'placeholders/user.png'
+      br
+      | Nombre de usuario
+    li
+      a href='#'
+        = fa_icon('bookmark')
+        | &nbsp; Inventario
+    li
+      a href='#'
+        = fa_icon('user')
+        | &nbsp; Miembros
+    li
+      a href='#'
+        = fa_icon('users')
+        | &nbsp; Equipos
+        .pull-right
+          = fa_icon('angle-down')
+      ul
+        li
+          a href='#'
+          | Item 1
+        li
+          a href='#'
+          | Item 2
+        li
+          a href='#'
+          | Item 3
+    li
+      a#sidebar-dropdown href='#'
+        = fa_icon('calendar')
+        | &nbsp; Eventos
+        .pull-right
+          = fa_icon('angle-down')
+      ul
+        li
+          a href='#'
+          | Item 1
+        li
+          a href='#'
+          | Item 2
+        li
+          a href='#'
+          | Item 3
+    li
+      a href='#'
+        = fa_icon('sitemap')
+        | &nbsp; Roles
+    li
+      a href='#'
+        = fa_icon('money')
+        | &nbsp; Patrocinadores
+
+/.sidebar-section
+  ul.sidebar-nav
+    li.sidebar-brand
+      = image_tag 'header_2.png', { width: 160 }
+    li.sidebar-image
+      = image_tag 'placeholders/user.png'
+      br
+      | Nombre de usuario
+    li
+      a href='#'
+        = fa_icon('bookmark')
+        | &nbsp; Inventario
+    li
+      a href='#'
+        = fa_icon('user')
+        | &nbsp; Miembros
+    li
+      a href='#'
+        = fa_icon('users')
+        | &nbsp; Equipos
+        .pull-right
+          = fa_icon('angle-down')
+      ul
+        li
+          a href='#'
+          | Item 1
+        li
+          a href='#'
+          | Item 2
+        li
+          a href='#'
+          | Item 3
+    li
+      a#sidebar-dropdown href='#'
+        = fa_icon('calendar')
+        | &nbsp; Eventos
+        .pull-right
+          = fa_icon('angle-down')
+      ul
+        li
+          a href='#'
+          | Item 1
+        li
+          a href='#'
+          | Item 2
+        li
+          a href='#'
+          | Item 3
+    li
+      a href='#'
+        = fa_icon('sitemap')
+        | &nbsp; Roles
+    li
+      a href='#'
+        = fa_icon('money')
+        | &nbsp; Patrocinadores
+
+.sidebar
+  ul.sidebar-content
+    li.sidebar-brand
+      = image_tag 'header_2.png', { width: 160 }
+    li.sidebar-user
+      = image_tag 'placeholders/user.png'
+      br
+      | Nombre de usuario
+    li
+      = sidebar_btn('bookmark', 'inventario').html_safe
+    li.sidebar-btn
+      = sidebar_btn('user', 'miembros').html_safe
+    li.sidebar-btn.sidebar-dropdown
+      = sidebar_btn('users', 'equipos').html_safe
+        .pull-right
+          = fa_icon('angle-down')
+      ul.sidebar-btn-options
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 1
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 2
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 3
+    li.sidebar-btn.sidebar-dropdown
+      = sidebar_btn('calendar', 'eventos').html_safe
+        .pull-right
+          = fa_icon('angle-down')
+      ul.sidebar-btn-options
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 1
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 2
+        li.sidebar-btn
+          = link_to '#', class: 'sidebar-btn' do |c|
+            | Item 3
+    li.sidebar-btn
+      = sidebar_btn('money', 'patrocinadores').html_safe

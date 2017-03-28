@@ -1,0 +1,19 @@
+.private-section {
+  padding-left: 0px;
+  transition: all 0.5s ease;
+}
+
+
+/*    --------    Sidebar style    --------    */
+
+.public-page-content {
+  width: 100%;
+  position: absolute;
+  padding: 50px 20px;
+  min-height: 100vh;
+  margin-right: -200px;
+}
+
+.navbar-brand {
+  display: inline;
+}
